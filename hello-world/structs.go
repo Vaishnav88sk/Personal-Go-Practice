@@ -12,7 +12,7 @@ func main() {
 	}
 
 	// Nested structs
-	type car struct {
+	type carr struct {
 		brand      string
 		model      string
 		doors      int
@@ -25,11 +25,11 @@ func main() {
 		radius   int
 		material string
 	}
-	myCar := car{}
+	myCar := carr{}
 	myCar.frontWheel.radius = 5
 
 	// Anonymous struct
-	myCar := struct {
+	myCary := struct {
 		brand string
 		model string
 	}{
@@ -38,7 +38,7 @@ func main() {
 	}
 
 	// Embedded structs
-	type car struct {
+	type cars struct {
 		brand string
 		model string
 	}
@@ -47,7 +47,7 @@ func main() {
 		// "car" is embedded, so the definition of a
 		// "truck" now also additionally contains all
 		// of the fields of the car struct
-		car
+		cars
 		bedSize int
 	}
 
@@ -62,7 +62,7 @@ func main() {
 
 	// named empty struct type
 	type emptyStruct struct{}
-	empty := emptyStruct{}
+	emptyy := emptyStruct{}
 
 }
 

@@ -34,4 +34,21 @@ func main() {
 	// continue keyword - stops thr current iteration and continues to next iteration
 	// break keyword - stops thr current iteration and exits
 
+	// for with range
+	nums := []int{10, 20, 30}
+	for index, value := range nums {
+		fmt.Println(index, value)
+	}
+
+	// Loop over string
+	for i, ch := range "hello" {
+		fmt.Println(i, string(ch))
+	}
+
+	// Loop over map
+	m := map[string]int{"a": 1, "b": 2}
+	for key, val := range m {
+		fmt.Println(key, val)
+	}
+
 }
